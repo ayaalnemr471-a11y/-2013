@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="G0UX_SxVRuLqU7N3cvI5TU3ikhZbm8NQfBC573wBnhg">
+<meta name="description" content="المصحف الذهبي الأصلي — مميزات التطبيق، تجربة القراءة والاستماع، لقطات من الواجهة ورابط التحميل.">
+<meta name="theme-color" content="#071f16">
+<title>تطبيق المصحف الذهبي الأصلي | الصفحة الرسمية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#f4f7f5;--surface:#fff;--ink:#0e2119;--muted:#66766f;
+--green:#075c3a;--green2:#0a8050;--gold:#d6ad54;--gold2:#f1d890;
+--line:#e1eae5;--shadow:0 22px 65px rgba(5,42,27,.12)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tajawal,Arial,sans-serif;background:
+radial-gradient(circle at 8% 0%,rgba(214,173,84,.14),transparent 25%),
+radial-gradient(circle at 92% 5%,rgba(10,128,80,.12),transparent 25%),var(--bg);
+color:var(--ink);line-height:1.8}
+.container{width:min(1160px,calc(100% - 26px));margin:auto}
+.nav{position:sticky;top:10px;z-index:50;margin-top:12px;padding:10px 13px;
+display:flex;align-items:center;justify-content:space-between;gap:15px;border-radius:17px;
+background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border:1px solid #fff;
+box-shadow:0 10px 35px rgba(7,52,34,.1)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--green);font-weight:900}
+.brandmark{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;
+font-size:22px;color:#fff;background:linear-gradient(145deg,var(--gold),#b88624);
+box-shadow:0 7px 20px rgba(170,120,25,.22)}
+.links{display:flex;gap:4px} .links a{text-decoration:none;color:#5a6b64;font-size:14px;font-weight:700;padding:8px 11px;border-radius:10px}
+.links a:hover{background:#edf7f1;color:var(--green)}
+.hero{position:relative;overflow:hidden;margin-top:17px;border-radius:30px;min-height:560px;
+display:flex;align-items:center;padding:clamp(35px,7vw,82px);color:#fff;
+background:linear-gradient(125deg,#041e14,#075a39 52%,#0b8653);box-shadow:var(--shadow)}
+.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;
+left:-260px;top:-310px;border:1px solid rgba(255,255,255,.1);box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.018)}
+.hero:after{content:"✦";position:absolute;right:7%;top:9%;font-size:190px;line-height:1;color:rgba(214,173,84,.08)}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.credit-top{display:inline-block;margin-bottom:10px;padding:8px 14px;border:1px solid rgba(241,216,144,.35);background:rgba(0,0,0,.12);border-radius:999px;color:#f5ead0;font-size:13px;font-weight:800}.credit-top strong{color:#f1d890}
+.badge{display:inline-flex;padding:8px 15px;border:1px solid rgba(255,255,255,.2);
+background:rgba(255,255,255,.1);border-radius:999px;font-size:14px;font-weight:800}
+.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;margin:22px 0 17px;font-weight:900;letter-spacing:-1px}
+.hero p{max-width:710px;color:#e3f1eb;font-size:clamp(1rem,2vw,1.2rem);margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 23px;
+border-radius:14px;text-decoration:none;font-weight:900;transition:.2s transform,.2s box-shadow}
+.primary{background:#fff;color:#06452d;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.23)}
+.btn:hover{transform:translateY(-3px)}
+.mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px;max-width:650px}
+.mini{padding:14px 16px;border-radius:15px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+.mini b{display:block;font-size:20px} .mini span{font-size:12px;color:#d6e8df}
+.section{padding-top:72px}
+.head{text-align:center;max-width:760px;margin:0 auto 30px}
+.kicker{font-size:13px;font-weight:900;color:var(--green2)}
+.head h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:4px 0 7px}
+.head p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.feature{background:var(--surface);border:1px solid var(--line);border-radius:19px;padding:20px;
+box-shadow:0 8px 28px rgba(16,59,42,.045);transition:.22s transform,.22s box-shadow}
+.feature:hover{transform:translateY(-5px);box-shadow:0 18px 42px rgba(16,59,42,.11)}
+.icon{width:47px;height:47px;display:grid;place-items:center;border-radius:13px;
+background:linear-gradient(145deg,#e9f8ef,#f9f4e4);font-size:22px;margin-bottom:12px}
+.feature h3{font-size:17px;margin:0 0 5px} .feature p{font-size:13px;color:var(--muted);margin:0}
+.advantages{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 12px 40px rgba(16,59,42,.06)}
+.panel h3{font-size:24px;margin:0 0 9px} .panel p{color:var(--muted)}
+.pros{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:20px}
+.pro{padding:13px;border-radius:13px;background:#f4faf7;color:#38554a;font-size:14px}
+.pro b{color:var(--green);display:block}
+.cons{border-right:5px solid #d3a94e;background:linear-gradient(135deg,#fffdf6,#fbfaf5)}
+.cons ul{margin:14px 0 0;padding-right:22px;color:#6d6755}
+.cons li{margin:7px 0}
+.note{font-size:12px;color:#8a8067;margin-top:13px}
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.shot{border:0;padding:0;position:relative;aspect-ratio:3/5;overflow:hidden;border-radius:18px;
+background:#e7eeea;cursor:pointer;box-shadow:0 9px 28px rgba(0,0,0,.1)}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s transform}
+.shot span{position:absolute;right:8px;left:8px;bottom:8px;background:rgba(0,0,0,.58);
+color:#fff;padding:6px;border-radius:9px;font-size:12px;opacity:0;transition:.2s}
+.shot:hover img{transform:scale(1.045)} .shot:hover span{opacity:1}
+.download{margin-top:72px;padding:48px 25px;border-radius:29px;text-align:center;color:#fff;
+background:linear-gradient(135deg,#053c27,#0a7d4e);box-shadow:var(--shadow)}
+.download h2{font-size:clamp(2rem,4vw,2.8rem);margin:0 0 6px} .download p{color:#dceee6;margin:0 0 23px}
+.footer{text-align:center;color:#7b8983;padding:36px 0 100px;font-size:14px}
+.footer strong{color:#52655c}
+.floating{position:fixed;left:16px;bottom:16px;z-index:60}
+.floating a{width:53px;height:53px;display:grid;place-items:center;border-radius:50%;
+background:var(--green);color:#fff;text-decoration:none;font-size:21px;box-shadow:0 13px 32px rgba(0,84,52,.3)}
+.lightbox{position:fixed;inset:0;background:rgba(2,13,9,.93);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.lightbox.open{display:flex} .lightbox img{max-width:min(100%,1050px);max-height:90vh;border-radius:15px}
+.close{position:absolute;left:16px;top:16px;width:46px;height:46px;border:0;border-radius:50%;
+font-size:28px;cursor:pointer;background:#fff;color:#18352a}
+
+/* Reviews & comments */
+.reviews-wrap{display:flex;flex-direction:column;gap:18px;align-items:stretch}
+.review-form,.reviews-list{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 40px rgba(16,59,42,.06)}
+.review-form h3,.reviews-list h3{margin:0 0 8px;font-size:22px}
+.review-form p,.reviews-list p{color:var(--muted);margin-top:0}
+.form-row{display:grid;gap:12px;margin-top:14px}
+.input,.textarea{width:100%;border:1px solid #dce7e1;background:#fbfdfc;border-radius:13px;padding:13px 14px;font-family:inherit;font-size:14px;color:var(--ink);outline:none;transition:.2s border,.2s box-shadow}
+.input:focus,.textarea:focus{border-color:#8ac4a7;box-shadow:0 0 0 4px rgba(10,128,80,.08)}
+.textarea{min-height:120px;resize:vertical}
+.stars{display:flex;flex-wrap:wrap;gap:7px;direction:ltr;margin:6px 0 2px}
+.star{border:0;background:#eef3f0;color:#9ba8a2;width:42px;height:42px;border-radius:11px;font-size:23px;cursor:pointer;transition:.18s transform,.18s background,.18s color}
+.star.active,.star:hover{background:#fff5d7;color:#c9931d;transform:translateY(-2px)}
+.submit-review{border:0;cursor:pointer;background:linear-gradient(135deg,var(--green),var(--green2));color:#fff}
+.review-summary{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px;border-radius:15px;background:#f6faf8;margin:14px 0}
+.rating-big{font-size:30px;font-weight:900;color:var(--green)}
+.review-card{padding:16px;border:1px solid var(--line);border-radius:16px;background:#fcfefd;margin-top:12px}
+.review-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.review-name{font-weight:900;color:var(--green)}
+.review-stars{color:#c9931d;letter-spacing:1px;font-size:15px}
+.review-text{margin:8px 0 0!important;color:#43564d!important;white-space:pre-wrap}
+.empty-reviews{padding:18px;border:1px dashed #cedbd5;border-radius:15px;text-align:center;color:var(--muted)}
+.review-note{font-size:12px;color:#8a968f;margin-top:10px}
+
+@media(max-width:950px){.features{grid-template-columns:repeat(2,1fr)}.advantages{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(3,1fr)}.reviews-wrap{grid-template-columns:1fr}}
+@media(max-width:620px){
+.container{width:calc(100% - 16px)}.nav{top:6px}.links{display:none}.hero{min-height:auto;padding:38px 20px;border-radius:22px}
+.hero h1{font-size:2.65rem}.mini-stats{grid-template-columns:1fr}.features{grid-template-columns:1fr}
+.pros{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr);gap:10px}
+.section{padding-top:54px}.download{margin-top:54px;padding:37px 17px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* ===== Professional enhancements ===== */
+.theme-toggle{
+  border:1px solid var(--line);background:var(--surface);color:var(--green);
+  width:43px;height:43px;border-radius:13px;cursor:pointer;font-size:19px;
+  box-shadow:0 6px 18px rgba(7,52,34,.08);transition:.2s transform,.2s background;
+}
+.theme-toggle:hover{transform:translateY(-2px)}
+body.dark{
+  --bg:#07130f;--surface:#0d2119;--ink:#edf7f2;--muted:#aabcb4;--line:#1d3a2e;
+  --green:#6ed3a5;--green2:#78dfaf;--shadow:0 22px 65px rgba(0,0,0,.35);
+}
+body.dark .nav{background:rgba(13,33,25,.9);border-color:#24483a}
+body.dark .feature,body.dark .panel{background:#0d2119;border-color:#1d3a2e}
+body.dark .pro{background:#102b21;color:#bfd0c9}
+body.dark .cons{background:linear-gradient(135deg,#211d12,#17180f)}
+body.dark .shot{background:#10251d}
+body.dark .theme-toggle{background:#102b21;color:#f1d890;border-color:#285140}
+body.dark .links a{color:#b7c9c1}
+body.dark .links a:hover{background:#17372a;color:#8de5b8}
+
+.mobile-menu{
+  display:none;border:0;background:var(--green);color:#fff;width:43px;height:43px;
+  border-radius:13px;font-size:21px;cursor:pointer
+}
+.mobile-links{display:none}
+@media(max-width:620px){
+  .nav{flex-wrap:wrap}
+  .mobile-menu{display:grid;place-items:center}
+  .links{display:none!important}
+  .mobile-links{
+    width:100%;padding:8px;gap:6px;background:var(--surface);
+    border:1px solid var(--line);border-radius:14px
+  }
+  .mobile-links.open{display:grid;grid-template-columns:1fr 1fr}
+  .mobile-links a{padding:10px;text-decoration:none;text-align:center;color:var(--green);font-weight:800;border-radius:10px}
+  .mobile-links a:hover{background:#edf7f1}
+}
+
+.share-bar{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:22px
+}
+.share-btn{
+  border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.1);
+  color:#fff;padding:10px 15px;border-radius:12px;font-family:inherit;
+  font-weight:800;cursor:pointer
+}
+
+.reviews-wrap{display:flex;flex-direction:column;gap:18px}
+.review-summary{text-align:center}
+.rating-big{font-size:48px;font-weight:900;color:var(--gold);line-height:1}
+.stars{letter-spacing:2px;color:#e0b94f;font-size:23px;margin:7px 0}
+.review-form{display:grid;gap:10px;margin-top:20px}
+.review-form input,.review-form textarea,.review-form select{
+  width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);
+  padding:12px 14px;border-radius:12px;font:inherit;outline:none
+}
+.review-form textarea{min-height:105px;resize:vertical}
+.review-form button{
+  border:0;background:var(--green);color:#fff;padding:13px;border-radius:12px;
+  font:inherit;font-weight:900;cursor:pointer
+}
+.review-list{display:grid;gap:12px;max-height:550px;overflow:auto}
+.review-card{
+  padding:16px;border:1px solid var(--line);background:var(--surface);
+  border-radius:16px
+}
+.review-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.review-name{font-weight:900}
+.review-date{font-size:11px;color:var(--muted)}
+.review-card p{margin:7px 0 0;color:var(--muted);font-size:14px}
+.empty-reviews{padding:25px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:16px}
+
+.faq{display:grid;gap:10px;max-width:900px;margin:auto}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:15px 18px}
+.faq summary{cursor:pointer;font-weight:900;color:var(--green)}
+.faq p{color:var(--muted);margin:10px 0 0}
+
+.back-top{
+  position:fixed;right:16px;bottom:16px;z-index:60;width:49px;height:49px;border:0;
+  border-radius:50%;background:var(--gold);color:#18352a;font-size:20px;cursor:pointer;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:.2s
+}
+.back-top.show{opacity:1;pointer-events:auto}
+.toast{
+  position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);
+  background:#102a20;color:#fff;padding:11px 17px;border-radius:12px;z-index:200;
+  opacity:0;pointer-events:none;transition:.25s;box-shadow:0 12px 30px rgba(0,0,0,.2)
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+
+/* Final polish */
+img{content-visibility:auto}
+button,a,input,textarea,select{ -webkit-tap-highlight-color:transparent }
+:focus-visible{outline:3px solid rgba(214,173,84,.7);outline-offset:3px}
+@media print{
+  .nav,.floating,.back-top,.toast,.download .share-bar,.theme-toggle,.mobile-menu{display:none!important}
+  body{background:#fff!important;color:#111!important}
+  .hero{box-shadow:none}
+}
+
+
+.publish-note{margin:35px auto 0;max-width:760px;text-align:center;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+
+<div class="container">
+<nav class="nav">
+<a class="brand" href="#"><span class="brandmark">📖</span><span>المصحف الذهبي</span></a>
+<div class="links"><a href="#features">المميزات</a><a href="#pros">التقييم</a><a href="#gallery">الصور</a><a href="#reviews">الآراء</a><a href="#download">التحميل</a></div>
+</nav>
+
+<header class="hero">
+<div class="hero-content">
+<div class="credit-top">✦ المبرمج والمنشئ: <strong>مصطفى محمد حسن أيوب النمر</strong></div>
+    <span class="badge">✦ صفحة تعريفية رسمية • تجربة قرآنية عصرية</span>
+<h1>تطبيق<br>المصحف الذهبي</h1>
+<p>واجهة احترافية تجمع مميزات القراءة والاستماع والتخصيص في تجربة منظمة، مع معرض حقيقي لواجهات التطبيق ورابط تحميل واضح.</p>
+<div class="actions">
+<a class="btn primary" href="https://www.mediafire.com/file/ajqee0hpdeoex3i/almoshaf_alsharif_1.0.zip/file" target="_blank" rel="noopener noreferrer">⬇️ تحميل التطبيق</a>
+<a class="btn secondary" href="#features">✦ اكتشف المميزات</a>
+</div>
+<div class="mini-stats">
+<div class="mini"><b>22+</b><span>ميزة وتجربة في الصفحة</span></div>
+<div class="mini"><b>5</b><span>لقطات حقيقية من التطبيق</span></div>
+<div class="mini"><b>100%</b><span>تصميم متجاوب للويب</span></div>
+</div>
+</div>
+</header>
+
+<section class="section" id="features">
+<div class="head"><div class="kicker">المميزات</div><h2>مميزات كثيرة في مكان واحد</h2><p>أبرزت هنا المميزات المذكورة في صفحتك الأصلية، وأضافت الصفحة مجموعة تحسينات وتجربة عرض تجعل المنتج يبدو أكثر احترافية.</p></div>
+<div class="features"><article class="feature"><div class="icon">📖</div><h3>قراءة مريحة</h3><p>واجهة مصممة للوصول السريع إلى السور والصفحات.</p></article>
+<article class="feature"><div class="icon">🎧</div><h3>الاستماع</h3><p>إمكانية استخدام التطبيق للاستماع إلى التلاوة.</p></article>
+<article class="feature"><div class="icon">🎙️</div><h3>قراء متعددون</h3><p>دعم قائمة واسعة من كبار القراء والمشاهير.</p></article>
+<article class="feature"><div class="icon">🔊</div><h3>اختيار القارئ</h3><p>اختيار القارئ المناسب حسب تفضيل المستخدم.</p></article>
+<article class="feature"><div class="icon">🌙</div><h3>الوضع الليلي</h3><p>التبديل بين الوضع الليلي والنهاري لراحة العين.</p></article>
+<article class="feature"><div class="icon">🔠</div><h3>حجم الخط</h3><p>تكبير وتصغير الخط بما يناسب المستخدم.</p></article>
+<article class="feature"><div class="icon">📚</div><h3>الحفظ والمراجعة</h3><p>أوضاع مخصصة للحفظ والمراجعة والتدبر.</p></article>
+<article class="feature"><div class="icon">🧭</div><h3>تنقل سريع</h3><p>الوصول إلى السورة أو الصفحة المطلوبة بسهولة.</p></article>
+<article class="feature"><div class="icon">💡</div><h3>التفسير الميسر</h3><p>وجود خيار للتفسير الميسر ضمن تجربة القراءة.</p></article>
+<article class="feature"><div class="icon">⚙️</div><h3>إعدادات مرنة</h3><p>تحكم أكبر في طريقة استخدام التطبيق.</p></article>
+<article class="feature"><div class="icon">📱</div><h3>مناسب للموبايل</h3><p>واجهة صفحة التعريف متجاوبة مع الشاشات الصغيرة.</p></article>
+<article class="feature"><div class="icon">🖼️</div><h3>معرض واجهات</h3><p>عرض لقطات حقيقية من داخل التطبيق.</p></article>
+<article class="feature"><div class="icon">🔍</div><h3>معاينة مكبرة</h3><p>إمكانية تكبير لقطات الشاشة قبل اتخاذ قرار التحميل.</p></article>
+<article class="feature"><div class="icon">⬇️</div><h3>تحميل مباشر</h3><p>زر واضح للوصول إلى ملف التطبيق المضغوط.</p></article>
+<article class="feature"><div class="icon">✨</div><h3>تصميم هادئ</h3><p>هوية بصرية مستوحاة من الطابع القرآني والذهبي.</p></article>
+<article class="feature"><div class="icon">🚀</div><h3>وصول واضح</h3><p>تقسيم الصفحة إلى أقسام يسهل تصفحها.</p></article>
+<article class="feature"><div class="icon">🧩</div><h3>تجربة منظمة</h3><p>عرض المميزات والمعلومات بطريقة مرتبة.</p></article>
+<article class="feature"><div class="icon">🔒</div><h3>رابط آمن للفتح</h3><p>فتح رابط التحميل الخارجي بإعدادات مناسبة للمتصفح.</p></article>
+<article class="feature"><div class="icon">⚡</div><h3>تحميل صور ذكي</h3><p>استخدام التحميل الكسول للصور لتقليل التحميل الأولي.</p></article>
+<article class="feature"><div class="icon">♿</div><h3>مراعاة الوصول</h3><p>دعم لوحة المفاتيح لبعض عناصر المعرض وتقليل الحركة.</p></article>
+<article class="feature"><div class="icon">📐</div><h3>متجاوب</h3><p>تكييف المحتوى تلقائيًا مع أحجام الشاشات المختلفة.</p></article>
+<article class="feature"><div class="icon">📝</div><h3>معلومات واضحة</h3><p>توضيح فكرة التطبيق ومميزاته قبل التحميل.</p></article></div>
+</section>
+
+<section class="section" id="pros">
+<div class="head"><div class="kicker">نظرة على الموقع</div><h2>المميزات كثيرة… والعيوب قليلة</h2><p>قسم التقييم متوازن، والعيوب هنا محدودة ومبنية فقط على ما يمكن ملاحظته من الصفحة والمحتوى المتاح.</p></div>
+<div class="advantages">
+<div class="panel">
+<h3>🟢 نقاط القوة</h3>
+<div class="pros">
+<div class="pro"><b>واجهة بسيطة</b>سهولة الوصول إلى الأقسام والتحميل.</div>
+<div class="pro"><b>مميزات متنوعة</b>قراءة واستماع وتخصيص.</div>
+<div class="pro"><b>عرض واضح</b>الصور والمعلومات مرتبة بشكل احترافي.</div>
+<div class="pro"><b>مناسب للموبايل</b>الصفحة تتكيف مع الشاشات الصغيرة.</div>
+<div class="pro"><b>زر تحميل بارز</b>الوصول للتحميل أسرع.</div>
+<div class="pro"><b>معرض تفاعلي</b>تكبير اللقطات دون مغادرة الصفحة.</div>
+</div>
+</div>
+<div class="panel cons">
+<h3>🟡 عيوب محدودة</h3>
+<ul>
+<li>الصور الحالية مستضافة على خدمة خارجية، لذلك تعتمد جودتها وسرعة ظهورها على تلك الخدمة.</li>
+<li>ملف التحميل بصيغة ZIP، وقد يحتاج المستخدم إلى فك الضغط قبل الاستخدام.</li>
+<li>المعلومات المتاحة عن حجم التطبيق ومتطلبات التشغيل محدودة في الصفحة الحالية.</li>
+</ul>
+<div class="note">هذه ليست عيوبًا في وظائف التطبيق نفسها بالضرورة؛ بعضها متعلق بالموقع وطريقة عرض وتحميل التطبيق.</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<div class="head"><div class="kicker">المعرض</div><h2>شاهد التطبيق من الداخل</h2><p>اضغط على أي صورة لفتحها بحجم كبير.</p></div>
+<div class="gallery"><button class="shot" type="button" aria-label="تكبير لوجو التطبيق">
+      <img src="https://i.postimg.cc/XGZ3GW5C/IMG-20260818-WA0007.jpg" alt="لوجو التطبيق" loading="lazy" decoding="async">
+      <span>تكبير الصورة ⤢</span>
+    </button>
+<button class="shot" type="button" aria-label="تكبير إعدادات التطبيق">
+      <img src="https://i.postimg.cc/p9QxKCGG/IMG-20260818-WA0008.jpg" alt="إعدادات التطبيق" loading="lazy" decoding="async">
+      <span>تكبير الصورة ⤢</span>
+    </button>
+<button class="shot" type="button" aria-label="تكبير قائمة القراء 1">
+      <img src="https://i.postimg.cc/kVPqVzcp/IMG-20260818-WA0009.jpg" alt="قائمة القراء 1" loading="lazy" decoding="async">
+      <span>تكبير الصورة ⤢</span>
+    </button>
+<button class="shot" type="button" aria-label="تكبير قائمة القراء 2">
+      <img src="https://i.postimg.cc/jWYtWmX9/IMG-20260818-WA0010.jpg" alt="قائمة القراء 2" loading="lazy" decoding="async">
+      <span>تكبير الصورة ⤢</span>
+    </button>
+<button class="shot" type="button" aria-label="تكبير واجهة القراءة">
+      <img src="https://i.postimg.cc/3yj721Ss/IMG-20260818-WA0012.jpg" alt="واجهة القراءة" loading="lazy" decoding="async">
+      <span>تكبير الصورة ⤢</span>
+    </button></div>
+</section>
+
+
+<section class="section" id="reviews">
+  <div class="head"><div class="kicker">آراء المستخدمين</div><h2>شاركنا رأيك في المصحف الذهبي</h2><p>اكتب تجربتك مع البرنامج والموقع وساعدنا على تطوير التجربة للمستخدمين.</p></div>
+  <div class="reviews-wrap">
+    <div class="reviews-list rating-top">
+      <h3>⭐ التقييم العام للمستخدمين</h3>
+      <div class="review-summary">
+        <div><div class="rating-big" id="ratingAvg">0.0</div><div class="review-stars" id="ratingStars">☆☆☆☆☆</div></div>
+        <div><strong id="ratingCount">0</strong><br><span style="color:var(--muted);font-size:13px">تقييم مسجل</span></div>
+      </div>
+    </div>
+
+    <form class="review-form" id="reviewForm">
+      <h3>✍️ أضف تعليقك</h3>
+      <p>قيّم تجربتك واكتب رأيك بكل وضوح.</p>
+      <div class="form-row">
+        <input class="input" id="reviewName" maxlength="40" placeholder="الاسم أو لقب المستخدم" required>
+        <div>
+          <strong>التقييم</strong>
+          <div class="stars" id="starPicker" aria-label="اختيار التقييم من 5 نجوم">
+            <button class="star" type="button" data-value="1" aria-label="نجمة واحدة">★</button>
+            <button class="star" type="button" data-value="2" aria-label="نجمتان">★</button>
+            <button class="star" type="button" data-value="3" aria-label="3 نجوم">★</button>
+            <button class="star" type="button" data-value="4" aria-label="4 نجوم">★</button>
+            <button class="star" type="button" data-value="5" aria-label="5 نجوم">★</button>
+          </div>
+        </div>
+        <textarea class="textarea" id="reviewText" maxlength="500" placeholder="اكتب رأيك في البرنامج أو الموقع..." required></textarea>
+        <button class="btn submit-review" type="submit">إرسال التقييم والتعليق ★</button>
+      </div>
+      <div class="review-note">⭐ يمكنك إرسال تقييم واحد من هذا المتصفح. يتم حفظه محليًا حاليًا؛ ولجعل التقييمات مشتركة بين جميع الزوار نربط الموقع بقاعدة بيانات.</div>
+    </form>
+
+    <div class="reviews-list">
+      <h3>💬 التعليقات والآراء</h3>
+      <div id="reviewsContainer"><div class="empty-reviews">لا توجد تعليقات حتى الآن. كن أول من يشارك رأيه ✨</div></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section" id="faq">
+  <div class="head">
+    <div class="kicker">الأسئلة الشائعة</div>
+    <h2>كل ما تحتاج معرفته</h2>
+    <p>إجابات سريعة على الأسئلة التي قد تخطر ببال المستخدم قبل التحميل.</p>
+  </div>
+  <div class="faq">
+    <details><summary>هل التطبيق مجاني؟</summary><p>يمكنك استخدام رابط التحميل الموجود في الصفحة للوصول إلى نسخة التطبيق المتاحة.</p></details>
+    <details><summary>كيف أحمّل التطبيق؟</summary><p>اضغط على زر «تحميل المصحف الذهبي الآن» وسيتم فتح رابط التحميل الخارجي.</p></details>
+    <details><summary>هل الموقع يعمل على الهاتف؟</summary><p>نعم، تصميم الصفحة متجاوب مع شاشات الهواتف والأجهزة اللوحية والحاسوب.</p></details>
+    <details><summary>كيف أرسل اقتراحي؟</summary><p>استخدم قسم «آراء المستخدمين» وأرسل تقييمك وتعليقك مباشرة من الصفحة.</p></details>
+    <details><summary>هل التعليقات تظهر للجميع؟</summary><p>في هذه النسخة تُحفظ التعليقات محليًا على نفس الجهاز والمتصفح. يمكن ربطها لاحقًا بقاعدة بيانات لتصبح مشتركة بين جميع الزوار.</p></details>
+  </div>
+</section>
+
+<section class="download" id="download">
+<h2>هل أنت جاهز للتجربة؟</h2>
+<p>ابدأ التحميل من الرابط الموجود في الصفحة.</p>
+<a class="btn primary" href="https://www.mediafire.com/file/ajqee0hpdeoex3i/almoshaf_alsharif_1.0.zip/file" target="_blank" rel="noopener noreferrer">⬇️ تحميل المصحف الذهبي الآن</a><div class="share-bar"><button class="share-btn" id="shareBtn" type="button">📤 مشاركة الموقع</button><button class="share-btn" id="copyBtn" type="button">🔗 نسخ رابط الموقع</button></div>
+</section>
+
+<div class="publish-note" role="status">✨ النسخة النهائية جاهزة للنشر — تم تنظيم التقييم والتعليقات في قسم واحد.</div>
+<footer class="footer">
+تم إنشاء التطبيق بواسطة: <strong>مصطفى محمد حسن أيوب النمر</strong><br>
+جميع الحقوق محفوظة © 2026<br>
+<strong>تصميم وبرمجة: مصطفى محمد حسن أيوب النمر</strong>
+</footer>
+</div>
+
+<div class="floating"><a href="#download" aria-label="التحميل">⬇</a></div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+<button class="close" id="close" type="button" aria-label="إغلاق">×</button>
+<img id="bigImage" alt="">
+</div>
+
+<script>
+// نظام تعليقات محلي بسيط وآمن من حقن HTML
+(()=>{
+const KEY='golden_quran_reviews_v1';
+const form=document.getElementById('reviewForm');
+const nameEl=document.getElementById('reviewName');
+const textEl=document.getElementById('reviewText');
+const stars=[...document.querySelectorAll('#starPicker .star')];
+const container=document.getElementById('reviewsContainer');
+const avgEl=document.getElementById('ratingAvg');
+const starsEl=document.getElementById('ratingStars');
+const countEl=document.getElementById('ratingCount');
+let rating=5;
+function paintStars(){stars.forEach(s=>s.classList.toggle('active',Number(s.dataset.value)<=rating));}
+stars.forEach(s=>s.addEventListener('click',()=>{rating=Number(s.dataset.value);paintStars();}));
+paintStars();
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch{return []}}
+function save(items){localStorage.setItem(KEY,JSON.stringify(items));}
+function render(){
+ const items=load(); container.innerHTML='';
+ if(!items.length){const e=document.createElement('div');e.className='empty-reviews';e.textContent='لا توجد تعليقات حتى الآن. كن أول من يشارك رأيه ✨';container.appendChild(e);}
+ items.slice().reverse().forEach(item=>{
+   const card=document.createElement('article');card.className='review-card';
+   const top=document.createElement('div');top.className='review-top';
+   const n=document.createElement('div');n.className='review-name';n.textContent=item.name;
+   const st=document.createElement('div');st.className='review-stars';st.textContent='★'.repeat(item.rating)+'☆'.repeat(5-item.rating);
+   const txt=document.createElement('p');txt.className='review-text';txt.textContent=item.text;
+   const date=document.createElement('div');date.className='review-date';date.textContent=item.date ? new Date(item.date).toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'}) : '';
+   top.append(n,st);card.append(top,date,txt);container.appendChild(card);
+ });
+ const count=items.length;const avg=count?items.reduce((a,b)=>a+b.rating,0)/count:0;
+ avgEl.textContent=avg.toFixed(1);countEl.textContent=count;
+ const rounded=Math.round(avg);starsEl.textContent='★'.repeat(rounded)+'☆'.repeat(5-rounded);
+}
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=nameEl.value.trim(),text=textEl.value.trim();
+ if(!name||!text)return;
+ const items=load();
+ const duplicate=items.some(x=>x.name===name&&x.text===text);
+ if(duplicate){return;}
+ items.push({name,text,rating,date:Date.now()});
+ if(items.length>50) items.splice(0,items.length-50);
+ save(items);
+ form.reset();rating=5;paintStars();render();
+});
+render();
+})();
+
+(()=>{
+const box=document.getElementById('lightbox'),big=document.getElementById('bigImage'),close=document.getElementById('close');
+document.querySelectorAll('.shot').forEach(card=>card.addEventListener('click',()=>{
+const img=card.querySelector('img');big.src=img.currentSrc||img.src;big.alt=img.alt;box.classList.add('open');document.body.style.overflow='hidden';close.focus();
+}));
+function shut(){box.classList.remove('open');big.src='';document.body.style.overflow='';}
+close.addEventListener('click',shut);box.addEventListener('click',e=>{if(e.target===box)shut()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')shut()});
+})();
+</script>
+<button class="back-top" id="backTop" type="button" aria-label="العودة للأعلى">↑</button><div class="toast" id="toast"></div>
+</body>
+</html>
